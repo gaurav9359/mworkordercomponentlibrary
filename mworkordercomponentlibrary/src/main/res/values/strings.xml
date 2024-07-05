@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- button strings-->
+    <string name="custom_button_text">Button</string>
+
+
+    <!-- tab strings-->
+    <string name="tab_name">Tab</string>
+
+
+    <!-- listcard strings-->
+    <string name="listcard_separator">&#x2022;</string>
+    <string name="listcard_urgent">Urgent</string>
+    <string name="listcard_breakdown">Breakdown</string>
+    <string name="listcard_equipment_name">The Equipment name is here</string>
+    <string name="listcard_assigned_text">Assigned to John +2 others</string>
+    <string name="listcard_image_overlay_text">+1</string>
+    <string name="listcard_issue_id">123456123456</string>
+    <string name="listcard_error">error</string>
+    <string name="listcard_sample_text">Text</string>
+    <string name="listcard_workorder_id">WO 0021</string>
+    <string name="listcard_operation_id">OP 0021</string>
+
+    <!-- chat & mediapicker strings-->
+    <string name="chat_variant1_label_text">Label</string>
+    <string name="chat_dummy_description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="chat_add_media_text">+ Add\nMedia</string>
+    <string name="chat_capture_the_issue">Capture the Issue</string>
+    <string name="chat_dummy_document_title">Document Title</string>
+    <string name="chat_dummy_document_subtitle">subtitle</string>
+    <string name="chat_dummy_video_length">1:30</string>
+    <string name="chat_overlay_text_issue_image">+2</string>
+    <string name="chat_dummy_issue_title">Issue Title</string>
+    <string name="chat_dummy_breakdown_text">Breakdown</string>
+    <string name="chat_priority_heading">priority</string>
+    <string name="chat_dummy_priority_text">Urgent</string>
+    <string name="chat_impact_heading_text">impact</string>
+    <string name="chat_dummy_impact_text">High</string>
+    <string name="chat_probability_heading_text">probability</string>
+    <string name="chat_dummy_probability_text">Very likely</string>
+</resources>

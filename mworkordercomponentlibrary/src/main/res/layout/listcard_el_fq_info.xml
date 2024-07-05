@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/el_fq_layout"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/el_info"
+        layout="@layout/listcard_icon_text" />
+
+    <include
+        android:id="@+id/fq_info"
+        layout="@layout/listcard_icon_text" />
+
+</LinearLayout>

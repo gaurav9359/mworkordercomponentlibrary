@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- button colors-->
+    <color name="custom_button_color_primary">#5C48DA</color>
+    <color name="custom_button_color_default">#5C48DA</color>
+    <color name="custom_button_color_pressed">#5C48DA</color>
+    <color name="custom_button_color_focused">#5C48DA</color>
+    <color name="custom_button_color_hovered">#5C48DA</color>
+    <color name="custom_button_color_disabled">#61656D</color>
+    <color name="custom_button_white">#FFFFFF</color>
+    <color name="custom_button_disabled_text_color">#61656D</color>
+    <color name="custom_button_disabled_icon_color">#AEB1BA</color>
+    <color name="custom_button_disabled_background_color">#DCDEE1</color>
+
+<!--    tab colors-->
+    <color name="tab_primary_color">#5C48DA</color>
+    <color name="tab_disabled">#61656D</color>
+    <color name="tab_disabled_icon">#AEB1BA</color>
+    <color name="tab_white">@android:color/white</color>
+
+<!--    listcard colors-->
+    <color name="listcard_background_color">@android:color/white</color>
+    <color name="listcard_text_color">#46484E</color>
+    <color name="listcard_urgent_color">@android:color/holo_red_dark</color>
+    <color name="listcard_icon_tint">#46484E</color>
+    <color name="listcard_overlay_color">#3C3C3C</color>
+
+
+<!--    chat & mediapicker colors-->
+    <color name="chat_white_color">#F2F2F2</color>
+    <color name="chat_urgent_color">@android:color/holo_red_dark</color>
+    <color name="chat_overlay_color">#3C3C3C</color>
+    <color name="chat_black">#000000</color>
+    <color name="chat_variant1_text_color_primary">#0E0F10</color>
+    <color name="chat_variant1_text_color_label">#46484E</color>
+    <color name="chat_variant1_background">@android:color/transparent</color>
+    <color name="chat_blue_border">#5C48DA</color>
+    <color name="chat_overlay_color_image">#80000000</color>
+    <color name="chat_break_line_color">#DCDEE1</color>
+    <color name="chat_overlay_background">#66000000</color>
+
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp">
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_icon_disselected_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_icon_disselected_normal_disabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            app:layout_constraintStart_toEndOf="@+id/tab_icon_disselected_normal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_icon_disselected_arabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_icon_disselected_normal" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_icon_disselected_arabic_disabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/tab_icon_disselected_arabic"
+            app:layout_constraintTop_toBottomOf="@+id/tab_icon_disselected_normal_disabled" />
+
+        <!-- New pairs -->
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_icon_selected_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_icon_disselected_arabic" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_icon_selected_normal_disabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/tab_icon_selected_normal"
+            app:layout_constraintTop_toBottomOf="@+id/tab_icon_disselected_arabic_disabled" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_icon_selected_arabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_icon_selected_normal" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_icon_selected_arabic_disabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/tab_icon_selected_arabic"
+            app:layout_constraintTop_toBottomOf="@+id/tab_icon_selected_normal_disabled" />
+
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_without_icon_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_icon_selected_arabic" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_without_icon_normal_disabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/tab_without_icon_normal"
+            app:layout_constraintTop_toBottomOf="@+id/tab_icon_selected_arabic_disabled" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_without_icon_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_without_icon_normal" />
+
+        <com.example.mworkordercomponentlibrary.components.tabcomponent.TabComponent
+            android:id="@+id/tab_without_icon_selected_disabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/tab_without_icon_selected"
+            app:layout_constraintTop_toBottomOf="@+id/tab_without_icon_normal_disabled" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

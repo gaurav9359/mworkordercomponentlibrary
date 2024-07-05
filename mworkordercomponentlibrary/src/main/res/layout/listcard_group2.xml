@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/issue_status"
+        layout="@layout/listcard_icon_text"
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/wc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/wc_label_layout"
+            layout="@layout/listcard_icon_text"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/assigned_to_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <FrameLayout
+            android:id="@+id/imageFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/firstImage"
+                android:layout_width="@dimen/listcard_image_size"
+                android:layout_height="@dimen/listcard_image_size"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/chat_media"
+                app:civ_border_color="@color/listcard_background_color"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/secondImage"
+                android:layout_width="@dimen/listcard_image_size"
+                android:layout_height="@dimen/listcard_image_size"
+                android:layout_marginStart="6dp"
+                android:src="@drawable/chat_media"
+                app:civ_border_color="@color/listcard_background_color"
+                app:civ_border_width="2dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/assigned_to_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/listcard_padding_small"
+            android:lineSpacingExtra="@dimen/listcard_text_line_spacing"
+            android:text="@string/listcard_assigned_text"
+            android:textColor="@color/listcard_text_color" />
+    </LinearLayout>
+</LinearLayout>

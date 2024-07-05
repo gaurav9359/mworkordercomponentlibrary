@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/variant2_main_title"
+    android:padding="@dimen/chat_padding_large"
+    android:background="@drawable/three_end_rounded_corner"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/issue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:text="@string/chat_dummy_issue_title"
+            android:textAppearance="@style/chat_title"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/breakdown_icon"
+            android:layout_width="@dimen/chat_breakdown_icon_size"
+            android:layout_height="@dimen/chat_breakdown_icon_size"
+            android:layout_marginTop="@dimen/chat_margin_small"
+            android:background="@drawable/error_fill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/issue_title" />
+
+        <TextView
+            android:id="@+id/breakdown_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/chat_margin_small"
+            android:layout_marginTop="@dimen/chat_margin_small"
+            android:text="@string/chat_dummy_breakdown_text"
+            android:textColor="@color/chat_urgent_color"
+            android:textSize="@dimen/chat_text_size_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/breakdown_icon"
+            app:layout_constraintTop_toBottomOf="@+id/issue_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/horizontal_rule"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/chat_margin_medium"
+        android:background="@color/chat_break_line_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chat_margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_rule">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingTop="@dimen/chat_padding_small"
+            android:paddingBottom="@dimen/chat_padding_small"
+            android:id="@+id/priority_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/priority_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chat_issue_info_height"
+                android:gravity="top"
+                android:text="@string/chat_priority_heading"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAppearance="@style/chat_heading"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:translationY="-1.55sp" />
+
+            <TextView
+                android:id="@+id/priority_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat_dummy_priority_text"
+                android:textStyle="bold"
+                android:textAppearance="@style/chat_priority"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/priority_heading" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/vertical_rule1"
+            android:layout_width="0.5dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/chat_margin_medium"
+            android:background="@color/chat_break_line_color"
+            app:layout_constraintBottom_toBottomOf="@id/state_layout"
+            app:layout_constraintStart_toEndOf="@id/priority_layout"
+            app:layout_constraintTop_toTopOf="@id/state_layout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingTop="@dimen/chat_padding_small"
+            android:paddingBottom="@dimen/chat_padding_small"
+            android:id="@+id/impact_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/chat_margin_medium"
+            app:layout_constraintStart_toEndOf="@id/vertical_rule1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/impact_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chat_issue_info_height"
+                android:gravity="top"
+                android:text="@string/chat_impact_heading_text"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAppearance="@style/chat_heading"
+                android:translationY="-1.55sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/impact_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat_dummy_impact_text"
+                android:textStyle="bold"
+                android:textAppearance="@style/chat_impact"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/impact_heading" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/vertical_rule2"
+            android:layout_width="0.5dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/chat_margin_medium"
+            android:background="@color/chat_break_line_color"
+            app:layout_constraintBottom_toBottomOf="@id/state_layout"
+            app:layout_constraintStart_toEndOf="@id/impact_layout"
+            app:layout_constraintTop_toTopOf="@id/state_layout" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/probability_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/chat_margin_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vertical_rule2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/probability_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chat_issue_info_height"
+                android:textStyle="bold"
+                android:gravity="top"
+                android:text="@string/chat_probability_heading_text"
+                android:textAllCaps="true"
+                android:textAppearance="@style/chat_heading"
+                android:translationY="-1.55sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/probability_icon"
+                android:layout_width="@dimen/chat_medium_icon_size"
+                android:layout_height="@dimen/chat_issue_info_height"
+                android:background="@drawable/probability_fill_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/probability_heading" />
+
+            <TextView
+                android:id="@+id/probability_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/chat_margin_small"
+                android:textStyle="bold"
+                android:text="@string/chat_dummy_probability_text"
+                android:textAppearance="@style/chat_impact"
+                app:layout_constraintStart_toEndOf="@+id/probability_icon"
+                app:layout_constraintTop_toBottomOf="@+id/probability_heading" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/horizontal_rule2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/chat_margin_medium"
+        android:background="@color/chat_break_line_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/state_layout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chat_margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_rule2">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/chat_margin_large"
+            android:gravity="top"
+            android:lineSpacingExtra="@dimen/chat_line_space_extra_medium"
+            android:text="@string/chat_dummy_description_text"
+            android:textAppearance="@style/chat_description_text"
+            app:layout_constraintEnd_toStartOf="@+id/chat_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chat_image"
+            android:layout_width="@dimen/chat_issue_image_size"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/issue_image"
+                android:layout_width="@dimen/chat_issue_image_size"
+                android:layout_height="@dimen/chat_issue_image_size"
+                android:src="@drawable/error_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/image_qty_text"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:gravity="center"
+                android:background="@color/chat_overlay_color"
+                android:text="@string/chat_overlay_text_issue_image"
+                android:textSize="@dimen/chat_text_size_medium"
+                android:textColor="@color/chat_white_color"
+                app:layout_constraintBottom_toBottomOf="@id/issue_image"
+                app:layout_constraintEnd_toEndOf="@id/issue_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/document_card_list"
+        android:layout_marginTop="@dimen/chat_margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" >
+
+        <include
+            android:id="@+id/card1"
+            layout="@layout/chat_document_card_without_image" />
+
+        <View
+            android:id="@+id/card1_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/chat_break_line_color" />
+
+        <include
+            android:id="@+id/card2"
+            layout="@layout/chat_document_card_with_image"
+            />
+
+        <View
+            android:id="@+id/card2_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/chat_break_line_color" />
+
+        <include
+            android:id="@+id/card3"
+            layout="@layout/chat_document_card_with_image"
+            />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

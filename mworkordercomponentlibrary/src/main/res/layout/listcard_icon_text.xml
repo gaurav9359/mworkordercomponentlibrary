@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/icon_text"
+    android:layout_marginTop="@dimen/listcard_margin_small">
+
+    <View
+        android:id="@+id/icon"
+        android:layout_width="@dimen/listcard_icon_size"
+        android:layout_height="@dimen/listcard_icon_size"
+        android:contentDescription="@string/listcard_error"
+        android:background="@drawable/error_fill"
+        android:backgroundTint="@color/listcard_icon_tint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:translationY="@dimen/listcard_translation_small" />
+
+    <TextView
+        android:id="@+id/text_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:lineSpacingExtra="@dimen/listcard_line_spacing_extra"
+        android:translationY="@dimen/listcard_translation_xsmall"
+        android:letterSpacing="0.02"
+        android:text="@string/listcard_sample_text"
+        android:layout_marginStart="@dimen/listcard_margin_medium"
+        android:textColor="@color/listcard_text_color"
+        android:textSize="@dimen/listcard_text_size_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

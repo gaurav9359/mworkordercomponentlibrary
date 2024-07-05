@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/capture_issue_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/chat_padding_large"
+    android:paddingBottom="@dimen/chat_padding_large"
+    android:paddingStart="@dimen/chat_padding_medium"
+    android:paddingEnd="@dimen/chat_padding_large"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/three_end_rounded_corner_arabic"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginStart="@dimen/chat_margin_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/chat_line_space_extra_small"
+        android:text="@string/chat_capture_the_issue"
+        android:textAppearance="@style/chat_capture_issue_text"
+        android:translationY="-0.97sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chat_margin_medium"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/issue_image_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:listitem="@layout/media_issue_image" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/chat_margin_medium"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/add_media"
+                android:gravity="center"
+                android:padding="@dimen/chat_padding_add_media_button"
+                android:layout_width="@dimen/chat_issue_image_size"
+                android:background="@drawable/dashed_outline_background"
+                android:layout_height="@dimen/chat_issue_image_size"
+                android:layout_gravity="center"
+                android:text="@string/chat_add_media_text"
+                android:textColor="@color/chat_blue_border"
+                android:textSize="@dimen/chat_text_size_medium"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

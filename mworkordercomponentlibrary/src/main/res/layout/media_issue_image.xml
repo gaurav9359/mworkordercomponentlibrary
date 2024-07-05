@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="@dimen/chat_issue_image_size"
+        android:layout_height="@dimen/chat_issue_image_size"
+        android:src="@drawable/error_image"
+        />
+
+    <TextView
+        android:id="@+id/overlay_text"
+        android:layout_width="@dimen/chat_issue_image_size"
+        android:layout_height="@dimen/chat_issue_image_size"
+        android:text="@string/chat_overlay_text_issue_image"
+        android:textSize="@dimen/chat_text_size_large"
+        android:textColor="@color/chat_white_color"
+        android:background="@drawable/image_overlay_background"
+        android:padding="@dimen/chat_padding_small"
+        android:visibility="gone"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/video_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chat_dummy_video_length"
+        android:visibility="gone"
+        android:textColor="@color/chat_white_color"
+        android:textSize="@dimen/chat_text_size_medium"
+        android:gravity="bottom|right"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="2dp"/>
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/custom_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tab_name"
+        app:iconSize="@dimen/tab_icon_size"
+        android:paddingTop="@dimen/tab_padding_top_bottom"
+        android:paddingBottom="@dimen/tab_padding_top_bottom"
+        android:paddingRight="@dimen/tab_padding_left_right"
+        android:paddingLeft="@dimen/tab_padding_left_right"
+        app:iconPadding="@dimen/tab_icon_padding"
+        android:textColor="@color/tab_primary_color"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        android:background="@drawable/tab_disselected_background_selector"
+        app:icon="@drawable/tab_add_line"
+        app:iconTint="@color/tab_primary_color"
+        android:translationY="-1.8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAppearance="@style/tab_label_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
